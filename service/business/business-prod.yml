@@ -6,6 +6,7 @@ spring:
     username: decompose-yelp
     password: yelp@12345
     url: jdbc:postgresql://localhost:5446/db-business
+    driver-class-name: org.postgresql.Driver
 jpa:
     hibernate:
       ddl-auto: update
