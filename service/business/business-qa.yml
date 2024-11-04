@@ -1,3 +1,14 @@
 business:
   info: Business Microserivce for Quality Assurance.
   
+spring:
+    datasource:
+    username: decompose-yelp
+    password: yelp@12345
+    url: jdbc:postgresql://localhost:5446/db-business
+jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
