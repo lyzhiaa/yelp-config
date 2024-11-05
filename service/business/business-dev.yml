@@ -3,13 +3,13 @@ business:
 
 spring:
     datasource:
-    username: decompose-yelp
-    password: yelp@12345
-    url: jdbc:postgresql://localhost:5446/postgres
-    driver-class-name: org.postgresql.Driver
+      username: decompose-yelp
+      password: yelp@12345
+      url: jdbc:postgresql://localhost:5446/postgres
+      driver-class-name: org.postgresql.Driver
 jpa:
+  hibernate:
+    ddl-auto: update
+  properties:
     hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+      dialect: org.hibernate.dialect.PostgreSQLDialect
