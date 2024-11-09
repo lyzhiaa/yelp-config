@@ -1,15 +1,26 @@
 server:
+<<<<<<< HEAD
   port: 9090
+=======
+  port: 9000
+>>>>>>> 0642983eb5ff0d6f6b76f81185ac46db2ee83e19
 
 spring:
   jpa:
     hibernate:
       ddl-auto: create-drop
   datasource:
+<<<<<<< HEAD
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5445/db-identity
     username: identity
     password: identity@1234
+=======
+    url: jdbc:postgresql://localhost:5169/oauth2
+    username: oauth2
+    password: oauth2
+    driver-class-name: org.postgresql.Driver
+>>>>>>> 0642983eb5ff0d6f6b76f81185ac46db2ee83e19
   servlet:
     multipart:
       max-request-size: 10MB
