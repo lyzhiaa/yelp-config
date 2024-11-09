@@ -1,0 +1,27 @@
+server:
+  port: 9090
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5445/db-identity
+    username: identity
+    password: identity@1234
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: it.chhaya@gmail.com
+    password: duuf wtgf nobv hggc
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
